@@ -25,7 +25,6 @@
       "volumesFrom": []
     }
   ],
-  "enableFaultInjection": false,
   "executionRoleArn": "arn:aws:iam::217391774843:role/ecsTaskExecutionRole",
   "family": "ecs-test-task",
   "memory": "1024",
