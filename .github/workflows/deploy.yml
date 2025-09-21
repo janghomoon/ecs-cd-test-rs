@@ -37,11 +37,11 @@ on:
 env:
 #  AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
 #  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
-  ECS_SERVICE: ecs-test-task-service-fnryfyge                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: esc-cluster                 # set this to your Amazon ECS cluster name
+  ECS_SERVICE: my-ecs-task-service                  # set this to your Amazon ECS service name
+  ECS_CLUSTER: my-esc-cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: task-definition.json # set this to the path to your Amazon ECS task definition
 #                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: jhm-test-container           # set this to the name of the container in the
+  CONTAINER_NAME: my-ecs-container           # set this to the name of the container in the
 #                                               # containerDefinitions section of your task definition
 
 permissions:
@@ -106,4 +106,4 @@ jobs:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ${{ env.ECS_SERVICE }} # ecs-test-task-service-fnryfyge
         cluster: ${{ env.ECS_CLUSTER }} # esc-cluster
-        wait-for-service-stability: true
+        wait-for-service-stability: false

@@ -10,7 +10,7 @@
       "essential": true,
       "image": "217391774843.dkr.ecr.ap-northeast-2.amazonaws.com/jhm/ci-cd-test",
       "mountPoints": [],
-      "name": "jhm-test-container",
+      "name": "my-ecs-container",
       "portMappings": [
         {
           "appProtocol": "http",
@@ -26,11 +26,11 @@
     }
   ],
   "executionRoleArn": "arn:aws:iam::217391774843:role/ecsTaskExecutionRole",
-  "family": "ecs-test-task",
+  "family": "my-ecs-task",
   "memory": "1024",
   "networkMode": "bridge",
   "placementConstraints": [],
-  "registeredAt": "2025-09-21T12:32:17.730Z",
+  "registeredAt": "2025-09-21T16:17:48.908Z",
   "registeredBy": "arn:aws:iam::217391774843:root",
   "requiresAttributes": [
     {
@@ -46,13 +46,13 @@
   "requiresCompatibilities": [
     "EC2"
   ],
-  "revision": 1,
+  "revision": 2,
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
   "status": "ACTIVE",
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:217391774843:task-definition/ecs-test-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:217391774843:task-definition/my-ecs-task:2",
   "volumes": [],
   "tags": []
 }
